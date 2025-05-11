@@ -1,6 +1,8 @@
 
-import { Text, View, SafeAreaView } from "react-native";
+import { Text, View, SafeAreaView, Image } from "react-native";
 import AutoSlider from "@/components/layout/UX/AdSlider";
+
+const FreeDelivery = require("@/assets/images/banner/Banner.png");
 
 const HomeScreen = () => {
 
@@ -16,7 +18,10 @@ const HomeScreen = () => {
                 <Text>see all</Text>
             </View>
             <View>
-
+                <Image
+                    src={FreeDelivery}
+                    alt="ads free delivery"
+                />
             </View>
         </SafeAreaView>
     )
